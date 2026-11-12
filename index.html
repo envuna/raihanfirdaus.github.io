@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal Pejabat Pengelola Informasi dan Dokumentasi Bawaslu Kota Bukittinggi.">
+  <meta name="theme-color" content="#123d2b">
+  <title>PPID Bawaslu Kota Bukittinggi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--green:#123d2b;--green2:#1d5b3d;--gold:#d8ad45;--ink:#17251d;--muted:#66736b;--paper:#f6f7f3;--white:#fff;--line:#e4e9e2;--shadow:0 16px 44px rgba(20,54,37,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}a{color:inherit}button{font:inherit}.container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topline{background:#0c2d20;color:#dce9df;font-size:12px;padding:8px 0}.topline .container{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:13px;text-decoration:none;min-width:230px}.crest{width:47px;height:52px;border:2px solid var(--gold);border-radius:14px 14px 18px 18px;background:var(--green);color:#fff;display:grid;place-items:center;font:800 15px Manrope;letter-spacing:-1px;box-shadow:inset 0 0 0 3px rgba(255,255,255,.12)}.brand strong{display:block;font:800 14px Manrope;line-height:1.25;color:var(--green)}.brand small{display:block;color:var(--muted);font-size:11px;margin-top:4px}.navlinks{display:flex;align-items:center;gap:23px}.navlinks a{text-decoration:none;font-size:13px;font-weight:700;color:#45534a}.navlinks a:hover{color:var(--green2)}.navlinks .nav-cta{background:var(--gold);color:#1d281f;padding:11px 16px;border-radius:8px}.menu{display:none;border:1px solid var(--line);background:white;border-radius:8px;padding:9px 12px}
+    .hero{background:radial-gradient(circle at 85% 20%,rgba(216,173,69,.19),transparent 26%),linear-gradient(120deg,#103a29,#1a5639);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:440px;height:440px;border:1px solid rgba(255,255,255,.09);border-radius:50%;right:-110px;top:-190px;box-shadow:0 0 0 35px rgba(255,255,255,.025),0 0 0 75px rgba(255,255,255,.02)}.hero-inner{position:relative;z-index:1;padding:82px 0 78px;max-width:760px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#f0d58d;font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}h1,h2,h3{font-family:Manrope,sans-serif;line-height:1.2}h1{font-size:clamp(34px,5vw,57px);letter-spacing:-2px;margin:19px 0 18px}.hero p{font-size:17px;color:#e0ebe3;max-width:620px;margin:0 0 29px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:8px;text-decoration:none;font-weight:800;font-size:13px;transition:.2s}.btn-gold{background:var(--gold);color:#1c2a20}.btn-outline{border:1px solid rgba(255,255,255,.45);color:white}.btn:hover{transform:translateY(-2px)}
+    .quick{margin-top:-27px;position:relative;z-index:2}.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);background:white;border-radius:14px;box-shadow:var(--shadow);overflow:hidden}.quick a{padding:23px 22px;text-decoration:none;border-right:1px solid var(--line);display:block}.quick a:last-child{border:0}.quick a:hover{background:#fbf8ef}.qicon{width:35px;height:35px;display:grid;place-items:center;background:#edf4ee;color:var(--green);border-radius:9px;font-size:18px;margin-bottom:12px}.quick strong{display:block;font:700 14px Manrope}.quick small{color:var(--muted);font-size:11px}
+    section{padding:82px 0}.section-head{max-width:650px;margin-bottom:34px}.kicker{color:#9b7625;font-size:11px;font-weight:800;letter-spacing:1.6px;text-transform:uppercase}.section-head h2{font-size:clamp(27px,3vw,38px);letter-spacing:-1.2px;margin:10px 0 12px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}.about-panel{background:#e9eee7;border-radius:18px;padding:34px;min-height:290px;position:relative;overflow:hidden}.about-panel:after{content:"PPID";position:absolute;right:-10px;bottom:-55px;font:800 120px Manrope;color:rgba(18,61,43,.06)}.about-panel .seal{width:72px;height:72px;border-radius:20px;background:var(--green);color:#fff;display:grid;place-items:center;font:800 22px Manrope;border:3px solid var(--gold);margin-bottom:22px}.about-panel h3{font-size:22px;margin:0 0 9px}.about-panel p{color:#5f6c62;max-width:420px;margin:0}.about-copy p{color:var(--muted)}.principles{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.principles span{background:#edf4ee;color:var(--green);padding:8px 12px;border-radius:20px;font-size:11px;font-weight:800}
+    .soft{background:#edf1eb}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:13px;padding:25px;box-shadow:0 6px 20px rgba(20,54,37,.035)}.card-icon{width:42px;height:42px;border-radius:11px;background:#edf4ee;display:grid;place-items:center;font-size:20px;margin-bottom:17px}.card h3{font-size:17px;margin:0 0 9px}.card p{font-size:13px;color:var(--muted);margin:0 0 15px}.text-link{font-size:12px;color:var(--green2);font-weight:800;text-decoration:none}.text-link:hover{text-decoration:underline}
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:step}.step{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;counter-increment:step}.step:before{content:"0" counter(step);display:block;color:#b18a35;font:800 23px Manrope;margin-bottom:20px}.step h3{font-size:15px;margin:0 0 8px}.step p{font-size:12px;color:var(--muted);margin:0}
+    .info-tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:20px}.search{flex:1;min-width:230px;border:1px solid var(--line);border-radius:9px;background:white;padding:13px 15px;font:inherit;font-size:13px}.filter{border:1px solid var(--line);border-radius:9px;background:white;padding:12px 14px;color:var(--green);font-weight:700}.info-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.info-item{background:white;border:1px solid var(--line);border-radius:10px;padding:17px 19px;display:flex;justify-content:space-between;gap:14px;align-items:center}.info-item strong{font-size:13px}.info-item small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.tag{white-space:nowrap;background:#edf4ee;color:var(--green);padding:5px 8px;border-radius:20px;font-size:10px;font-weight:800}
+    .notice{background:#fff8e7;border:1px solid #f0dfb6;border-radius:12px;padding:18px 20px;color:#67542b;font-size:12px;margin-top:20px}.download{display:flex;align-items:center;justify-content:space-between;gap:20px;background:white;border:1px solid var(--line);border-radius:12px;padding:21px 23px;margin-bottom:12px}.download strong{font-size:14px;display:block}.download small{color:var(--muted);font-size:11px}.download a{color:var(--green2);font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.contact-box{background:white;border:1px solid var(--line);border-radius:13px;padding:25px}.contact-box h3{margin:0 0 12px;font-size:17px}.contact-box p{font-size:13px;color:var(--muted);margin:5px 0}.contact-box .placeholder{color:#9b7625;font-style:italic}
+    footer{background:#0c2d20;color:#dbe7de;padding:38px 0 24px}.foot-top{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:28px}.foot-top strong{font:800 16px Manrope;color:white}.foot-top p{max-width:440px;color:#b9cbbd;font-size:12px}.foot-links{display:flex;gap:18px;flex-wrap:wrap}.foot-links a{color:#dbe7de;text-decoration:none;font-size:12px}.copyright{border-top:1px solid rgba(255,255,255,.13);padding-top:18px;color:#a9c0af;font-size:11px}
+    @media(max-width:850px){.navlinks{display:none;position:absolute;left:0;right:0;top:82px;background:white;padding:18px 22px 24px;border-bottom:1px solid var(--line);flex-direction:column;align-items:stretch;gap:15px}.navlinks.open{display:flex}.navlinks .nav-cta{text-align:center}.menu{display:block}.quick-grid{grid-template-columns:repeat(2,1fr)}.quick a:nth-child(2){border-right:0}.quick a:nth-child(-n+2){border-bottom:1px solid var(--line)}.about-grid{grid-template-columns:1fr;gap:25px}.steps{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.container{width:min(100% - 30px,1160px)}.topline .container{justify-content:center}.hero-inner{padding:62px 0 66px}.hero p{font-size:15px}section{padding:62px 0}.quick-grid{grid-template-columns:1fr 1fr}.quick a{padding:17px 14px}.cards,.info-list,.contact-grid{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.step{padding:17px}.download{align-items:flex-start;flex-direction:column}.brand{min-width:0}.brand strong{font-size:12px}.brand small{font-size:10px}}
+  </style>
+</head>
+<body>
+  <div class="topline"><div class="container"><span>BADAN PENGAWAS PEMILIHAN UMUM</span><span>Portal Informasi Publik · Kota Bukittinggi</span></div></div>
+  <header><div class="container nav">
+    <a class="brand" href="#beranda" aria-label="Beranda PPID"><span class="crest">PPID</span><span><strong>PPID BAWASLU</strong><small>KOTA BUKITTINGGI</small></span></a>
+    <button class="menu" id="menuButton" aria-expanded="false" aria-controls="navlinks">☰ Menu</button>
+    <nav class="navlinks" id="navlinks" aria-label="Navigasi utama">
+      <a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#informasi">Informasi Publik</a><a href="#prosedur">Prosedur</a><a href="#dokumen">Unduhan</a><a class="nav-cta" href="#kontak">Hubungi PPID</a>
+    </nav>
+  </div></header>
+  <main>
+    <section class="hero" id="beranda"><div class="container"><div class="hero-inner">
+      <span class="eyebrow">Layanan Informasi Publik</span>
+      <h1>Informasi Terbuka,<br>Pengawasan Terpercaya.</h1>
+      <p>Selamat datang di Portal Pejabat Pengelola Informasi dan Dokumentasi Bawaslu Kota Bukittinggi. Temukan informasi, dokumen, dan panduan layanan informasi publik dalam satu tempat.</p>
+      <div class="actions"><a class="btn btn-gold" href="#informasi">Jelajahi Informasi&nbsp; ↗</a><a class="btn btn-outline" href="#prosedur">Pelajari Tata Cara</a></div>
+    </div></div></section>
+    <div class="container quick"><div class="quick-grid">
+      <a href="#informasi"><span class="qicon">▤</span><strong>Informasi Publik</strong><small>Kenali kategori informasi</small></a>
+      <a href="#prosedur"><span class="qicon">↗</span><strong>Permohonan Informasi</strong><small>Pahami alur pengajuan</small></a>
+      <a href="#prosedur"><span class="qicon">⚖</span><strong>Pengajuan Keberatan</strong><small>Ketahui hak pemohon</small></a>
+      <a href="#dokumen"><span class="qicon">⇩</span><strong>Unduh Dokumen</strong><small>Formulir dan panduan</small></a>
+    </div></div>
+    <section id="profil"><div class="container about-grid">
+      <div class="about-panel"><div class="seal">PPID</div><h3>Pelayanan Informasi Publik</h3><p>Bawaslu Kota Bukittinggi berkomitmen mendukung keterbukaan informasi publik melalui layanan yang mudah diakses, transparan, dan akuntabel.</p></div>
+      <div class="about-copy"><span class="kicker">Tentang PPID</span><h2>Hak atas informasi adalah bagian dari pelayanan publik.</h2><p>Pejabat Pengelola Informasi dan Dokumentasi (PPID) mengelola layanan informasi publik, mulai dari penerimaan permohonan, koordinasi penyediaan informasi, hingga penanganan keberatan sesuai ketentuan yang berlaku.</p><p>Portal ini disiapkan sebagai pusat informasi awal bagi masyarakat untuk mengenali layanan PPID Bawaslu Kota Bukittinggi.</p><div class="principles"><span>Transparan</span><span>Akuntabel</span><span>Inklusif</span><span>Mudah Diakses</span></div></div>
+    </div></section>
+    <section class="soft" id="informasi"><div class="container"><div class="section-head"><span class="kicker">Akses Informasi</span><h2>Kenali kategori informasi publik</h2><p>Informasi publik dikelompokkan berdasarkan sifat dan kewajiban penyediaannya. Ketersediaan dokumen mengikuti daftar informasi publik resmi yang telah ditetapkan.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon">◷</div><h3>Informasi Berkala</h3><p>Informasi yang wajib diumumkan secara rutin dalam periode tertentu, sesuai ketentuan keterbukaan informasi publik.</p><a class="text-link" href="#dokumen">Lihat dokumen ↓</a></article>
+        <article class="card"><div class="card-icon">▣</div><h3>Informasi Setiap Saat</h3><p>Informasi yang wajib tersedia dan dapat diakses publik sepanjang tidak termasuk informasi yang dikecualikan.</p><a class="text-link" href="#dokumen">Lihat dokumen ↓</a></article>
+        <article class="card"><div class="card-icon">!</div><h3>Informasi Serta-Merta</h3><p>Informasi yang harus diumumkan segera apabila menyangkut hajat hidup orang banyak dan ketertiban umum.</p><a class="text-link" href="#dokumen">Lihat dokumen ↓</a></article>
+      </div>
+    </div></section>
+    <section id="prosedur"><div class="container"><div class="section-head"><span class="kicker">Panduan Layanan</span><h2>Bagaimana mengajukan permohonan informasi?</h2><p>Ikuti gambaran umum alur berikut. Persyaratan, media pengajuan, dan batas waktu resmi harus mengacu pada standar layanan PPID yang berlaku.</p></div>
+      <div class="steps">
+        <article class="step"><h3>Ajukan permohonan</h3><p>Pemohon menyampaikan permintaan informasi melalui kanal layanan resmi PPID.</p></article>
+        <article class="step"><h3>Verifikasi permohonan</h3><p>Petugas memeriksa kelengkapan identitas dan rincian informasi yang diminta.</p></article>
+        <article class="step"><h3>Proses dan koordinasi</h3><p>PPID menelusuri ketersediaan informasi dan berkoordinasi dengan unit terkait.</p></article>
+        <article class="step"><h3>Pemberitahuan jawaban</h3><p>Pemohon menerima pemberitahuan sesuai prosedur dan tenggat waktu yang berlaku.</p></article>
+      </div>
+      <div class="section-head" style="margin:48px 0 22px"><span class="kicker">Hak Pemohon</span><h2>Jika ingin mengajukan keberatan</h2><p>Keberatan dapat diajukan melalui mekanisme resmi apabila pemohon tidak puas terhadap pelayanan atau jawaban permohonan informasi. Tata cara dan tenggat waktu mengikuti peraturan yang berlaku.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon">✉</div><h3>Sampaikan keberatan</h3><p>Ajukan keberatan melalui kanal resmi dengan menyebutkan alasan dan permohonan yang menjadi dasar keberatan.</p></article>
+        <article class="card"><div class="card-icon">▤</div><h3>Catat dan teruskan</h3><p>PPID mencatat keberatan dan meneruskannya kepada Atasan PPID untuk ditangani sesuai prosedur.</p></article>
+        <article class="card"><div class="card-icon">✓</div><h3>Terima tanggapan</h3><p>Atasan PPID memberikan tanggapan tertulis sesuai ketentuan jangka waktu pelayanan.</p></article>
+      </div>
+    </div></section>
+    <section class="soft" id="dokumen"><div class="container"><div class="section-head"><span class="kicker">Pusat Dokumen</span><h2>Dokumen dan formulir layanan</h2><p>Ruang untuk mengakses daftar informasi publik, formulir permohonan, formulir keberatan, serta standar layanan PPID.</p></div>
+      <div class="download"><div><strong>Daftar Informasi Publik (DIP)</strong><small>Tambahkan tautan dokumen resmi yang telah dipublikasikan.</small></div><span class="tag">Tautan perlu diisi</span></div>
+      <div class="download"><div><strong>Formulir Permohonan Informasi</strong><small>Gunakan formulir resmi yang telah disahkan.</small></div><span class="tag">Tautan perlu diisi</span></div>
+      <div class="download"><div><strong>Formulir Pengajuan Keberatan</strong><small>Gunakan formulir resmi yang telah disahkan.</small></div><span class="tag">Tautan perlu diisi</span></div>
+      <div class="download"><div><strong>Standar Layanan dan Maklumat Pelayanan</strong><small>Publikasikan dokumen standar layanan yang berlaku.</small></div><span class="tag">Tautan perlu diisi</span></div>
+      <div class="notice"><strong>Catatan pengelola:</strong> Item unduhan di atas masih berupa placeholder. Ganti dengan tautan dokumen resmi sebelum portal diumumkan kepada masyarakat. Jangan mengunggah dokumen yang memuat informasi dikecualikan atau data pribadi tanpa dasar yang sah.</div>
+    </div></section>
+    <section id="kontak"><div class="container"><div class="section-head"><span class="kicker">Bantuan dan Kontak</span><h2>Butuh informasi lebih lanjut?</h2><p>Hubungi PPID melalui alamat dan kanal layanan resmi Bawaslu Kota Bukittinggi.</p></div>
+      <div class="contact-grid">
+        <div class="contact-box"><h3>🏢 Alamat layanan</h3><p class="placeholder">[Isi alamat kantor resmi Bawaslu Kota Bukittinggi]</p><p class="placeholder">[Isi hari dan jam layanan]</p></div>
+        <div class="contact-box"><h3>☎ Kanal komunikasi</h3><p class="placeholder">[Isi nomor telepon / WhatsApp resmi]</p><p class="placeholder">[Isi alamat email resmi PPID]</p><p class="placeholder">[Isi tautan situs dan media sosial resmi]</p></div>
+      </div>
+      <div class="notice">Portal ini merupakan rancangan awal. Pastikan seluruh identitas, kontak, tautan, dokumen, dasar hukum, prosedur, dan standar waktu telah diverifikasi oleh pejabat berwenang sebelum dipublikasikan sebagai kanal resmi.</div>
+    </div></section>
+  </main>
+  <footer><div class="container"><div class="foot-top"><div><strong>PPID BAWASLU KOTA BUKITTINGGI</strong><p>Portal informasi publik sebagai bagian dari komitmen keterbukaan informasi, transparansi, dan akuntabilitas pelayanan.</p></div><div class="foot-links"><a href="#profil">Profil</a><a href="#informasi">Informasi Publik</a><a href="#prosedur">Prosedur</a><a href="#dokumen">Unduhan</a></div></div><div class="copyright">© <span id="year"></span> PPID Bawaslu Kota Bukittinggi · Rancangan portal informasi publik</div></div></footer>
+  <script>
+    const menuButton=document.getElementById('menuButton');
+    const navlinks=document.getElementById('navlinks');
+    menuButton.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+    navlinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navlinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
